@@ -1,7 +1,7 @@
 def main():
-    x = int(input("First Number: ")) 
-    y = int(input("Second Number: ")) 
-    op = input("Add or Multi: ")
+    x = int(input("First Number: "))
+    y = int(input("Second Number: "))
+    op = input("Add or Multi: ").capitalize()
 
     if op == 'A':
         add(x, y)
