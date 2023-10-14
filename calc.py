@@ -4,7 +4,10 @@ def main():
     y = int(input("Second Number: "))
 
     #choose the operation
-    op = input("Choose the operation: ").capitalize()
+    while True:
+        op = input("Choose the operation: ").capitalize()
+        if op in ['A', 'M', 'D', 'S']:
+            break
 
     #apply the selected operation
     if op == 'A':
