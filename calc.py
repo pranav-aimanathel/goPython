@@ -16,8 +16,13 @@ def main():
         multi(x, y)
     elif op == 'S':
         sub(x, y)
+
+        #avoid clash with division with 0
     elif op == 'D':
-        div(x, y)
+        if x or  y == 0:
+            print("Calculation not possible. Retry with correct calculation")
+        else:
+            div(x, y)
     else:
         print("Invalid")
 
