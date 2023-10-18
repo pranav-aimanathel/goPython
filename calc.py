@@ -1,8 +1,15 @@
-def main():
-    #get the inputs
-    x = int(input("First Number: "))
-    y = int(input("Second Number: "))
+import string
 
+def main():
+    #getting the number of elements to be calculated
+    n = int(input("Number of elements to calculate: "))
+
+    elements = []
+
+    #get values for each element in the list
+    element = input(f"Enter value for element {chr(ord('a') + i)}: ")
+    elements.append(element)
+    
     #choose the operation
     while True:
         op = input("Choose the operation: ").capitalize()
